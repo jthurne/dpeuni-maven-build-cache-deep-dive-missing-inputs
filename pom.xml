@@ -63,5 +63,32 @@
       </configuration>
     </plugin>
   </plugins>
+  <pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>com.gradle</groupId>
+        <artifactId>gradle-enterprise-maven-extension</artifactId>
+        <configuration>
+          <gradleEnterprise>
+            <plugins>
+              <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <inputs>
+                  <fileSets>
+                    <fileSet>
+                      <name>test-data</name>
+                      <paths>
+                        <path>src/integration-test-samples</path>
+                      </paths>
+                    </fileSet>
+                  </fileSets>
+                </inputs>
+              </plugin>
+            </plugins>
+          </gradleEnterprise>
+        </configuration>
+      </plugin>
+    </plugins>
+  </pluginManagement>
 </build>
 </project>
