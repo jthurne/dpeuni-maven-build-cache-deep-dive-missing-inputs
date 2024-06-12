@@ -4,4 +4,15 @@
   <server>
     <url>https://dpeuniversity-develocity.gradle.com</url>
   </server>
+  <buildScan>
+    <tags>
+      <tag>dpeuni-maven-build-cache-deep-dive-missing-inputs</tag>
+    </tags>
+    <values>
+      <value>
+        <name>Course</name>
+        <value>Maven Build Cache Deep Dive</value>
+      </value>
+    </values>
+  </buildScan>
 </gradleEnterprise>
